@@ -52,3 +52,10 @@ Description of what the GitHub Action does.
                echo "Error: ${{ steps.open.outputs.error-message }}"
                exit 1
              fi
+## To Do After Cloning
+- Update the Readme.  Please include the title, description, a brief list of features at a minimum, Inputs, Outputs and Uasage.
+- Add the correct inputs and outputs to the `action.yml` file and call your function found in the `action.ps1`.
+- Update the `action.ps1` with your PowerShell code.
+- Update the `integration-tests` step in `./.github/workflows/build-check.yml` to provide the correct inputs to your action.
+- Configure the `./tests/Start-MockServer.ps1` to include any additonal API calls that are needed.
+- Configure the `./tests/action.Tests.ps1` to include any unit tests
